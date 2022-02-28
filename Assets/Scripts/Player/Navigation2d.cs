@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Navigation2d : MonoBehaviour
 {
+    
     public GameObject Player;
     public float acceleration = 0.005f;
     public float maxSpeed = 0.03f;
