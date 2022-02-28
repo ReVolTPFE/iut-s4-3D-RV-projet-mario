@@ -4,20 +4,21 @@ using UnityEngine;
 
 public class Navigation2d : MonoBehaviour
 {
-    public GameObject Camera;
-    public float acceleration;
-    public float maxSpeed;
+    public GameObject Player;
+    public float acceleration = 0.005f;
+    public float maxSpeed = 0.03f;
+    public float memoryAcceleration = 0;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        memoryAcceleration = acceleration;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.anyKey)
+        if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.DownArrow))
         {
             if ((acceleration * 1.01) < maxSpeed)
             {
@@ -26,24 +27,24 @@ public class Navigation2d : MonoBehaviour
         }
         else
         {
-            acceleration = 0.1f;
+            acceleration = memoryAcceleration;
         }
 
         if (Input.GetKey(KeyCode.UpArrow))
         {
-            Camera.transform.position += new Vector3(0, acceleration, 0); ;
+            Player.transform.position += transform.forward * acceleration;
         }
         if (Input.GetKey(KeyCode.DownArrow))
         {
-            Camera.transform.position += new Vector3(0, -acceleration, 0);
-        }
-        if (Input.GetKey(KeyCode.LeftArrow))
-        {
-            Camera.transform.position += new Vector3(acceleration, 0, 0);
+            Player.transform.position -= transform.forward * acceleration;
         }
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            Camera.transform.position += new Vector3(-acceleration, 0, 0);
+            Player.transform.Rotate(new Vector3(0, 1, 0));
+        }
+        if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            Player.transform.Rotate(new Vector3(0, -1, 0));
         }
     }
 }
