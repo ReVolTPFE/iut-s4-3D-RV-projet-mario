@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Navigation2d : MonoBehaviour
 {
+    
     public GameObject Player;
     public Camera cameraFocusPlayer;
     public float acceleration = 0.005f;
