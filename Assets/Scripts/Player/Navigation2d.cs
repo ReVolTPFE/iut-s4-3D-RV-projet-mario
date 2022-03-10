@@ -100,4 +100,8 @@ public class Navigation2d : MonoBehaviour
 
         }
     }
+
+    void OnCollisionEnter(Collision c) {
+        acceleration = 0.01f;
+    }
 }
