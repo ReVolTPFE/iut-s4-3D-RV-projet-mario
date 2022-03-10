@@ -62,4 +62,8 @@ public class Navigation2d : MonoBehaviour
             Player.transform.position += (Vector3.up * jumpForce * Time.deltaTime);
         }
     }
+
+    void OnCollisionEnter(Collision c) {
+        acceleration = 0.01f;
+    }
 }
