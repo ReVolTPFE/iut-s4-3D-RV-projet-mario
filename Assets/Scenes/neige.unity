@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9413,6 +9413,18 @@ PrefabInstance:
     - target: {fileID: 5686515650428593729, guid: 026ceac6c3ba68b449bb21f8a0cd8f5e, type: 3}
       propertyPath: m_Name
       value: Mario custom
+      objectReference: {fileID: 0}
+    - target: {fileID: 7105510690255845750, guid: 026ceac6c3ba68b449bb21f8a0cd8f5e, type: 3}
+      propertyPath: maxSpeed
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7105510690255845750, guid: 026ceac6c3ba68b449bb21f8a0cd8f5e, type: 3}
+      propertyPath: jumpForce
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7105510690255845750, guid: 026ceac6c3ba68b449bb21f8a0cd8f5e, type: 3}
+      propertyPath: acceleration
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 8696967667676353618, guid: 026ceac6c3ba68b449bb21f8a0cd8f5e, type: 3}
       propertyPath: m_RootOrder
