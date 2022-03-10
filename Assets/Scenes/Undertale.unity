@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4020,7 +4020,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7105510690255845750, guid: 026ceac6c3ba68b449bb21f8a0cd8f5e, type: 3}
       propertyPath: jumpForce
-      value: 200
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7105510690255845750, guid: 026ceac6c3ba68b449bb21f8a0cd8f5e, type: 3}
       propertyPath: acceleration
@@ -4524,7 +4524,7 @@ GameObject:
   - component: {fileID: 1726443569}
   - component: {fileID: 1726443568}
   - component: {fileID: 1726443567}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Sol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
