@@ -5,11 +5,14 @@ TagManager:
   serializedVersion: 2
   tags:
   - Star
+  - star
+  - coin
+  - Toad
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Coin
   - Water
   - UI
   - 
