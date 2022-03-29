@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StarCatch : MonoBehaviour
+public class StarCatchUnderground : MonoBehaviour
 {
     public int nbStar = 0;
     public GameObject pickupEffect;
