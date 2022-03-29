@@ -7,7 +7,7 @@ public class StarAnim : MonoBehaviour
     public Vector3 dir;
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         transform.Rotate(dir * Time.deltaTime);
     }

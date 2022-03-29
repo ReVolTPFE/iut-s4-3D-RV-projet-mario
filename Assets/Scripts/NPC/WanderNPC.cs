@@ -19,7 +19,7 @@ public class WanderNPC : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
     }
-    private void Update()
+    private void FixedUpdate()
     {
         if (isWandering == false)
         {
