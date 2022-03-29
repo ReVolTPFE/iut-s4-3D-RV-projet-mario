@@ -5605,7 +5605,7 @@ Transform:
   - {fileID: 54924451}
   - {fileID: 767540900}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &499491707 stripped
 Transform:
@@ -8522,7 +8522,7 @@ Transform:
   m_Children:
   - {fileID: 928472361}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &816759879 stripped
 Transform:
@@ -9825,7 +9825,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_TargetDisplay: 1
+  m_TargetDisplay: 0
 --- !u!224 &928472361
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10460,7 +10460,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3986896406389639674, guid: 2de5a10d6617d324f9f8f691f0145d1d, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3986896406389639674, guid: 2de5a10d6617d324f9f8f691f0145d1d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12034,7 +12034,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_TargetDisplay: 1
+  m_TargetDisplay: 0
 --- !u!4 &1168411582 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7537182868475593111, guid: b5f3c89b1e7cf16469c0077304cae481, type: 3}
@@ -12360,7 +12360,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6228515491340229125, guid: 9f71247b3ecf6d449816c0228115bd2a, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6228515491340229125, guid: 9f71247b3ecf6d449816c0228115bd2a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13415,7 +13415,7 @@ Transform:
   - {fileID: 1400533944}
   - {fileID: 767115175}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1278075707
 PrefabInstance:
@@ -14548,7 +14548,7 @@ Transform:
   m_Children:
   - {fileID: 1161706306}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1349897075
 PrefabInstance:
@@ -15322,7 +15322,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3986896406389639674, guid: 2de5a10d6617d324f9f8f691f0145d1d, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3986896406389639674, guid: 2de5a10d6617d324f9f8f691f0145d1d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15592,7 +15592,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!4 &1426357782 stripped
 Transform:
@@ -16411,7 +16411,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1473724232
 PrefabInstance:
@@ -17899,7 +17899,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_TargetDisplay: 1
+  m_TargetDisplay: 0
 --- !u!1001 &1596017133
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18686,7 +18686,7 @@ Transform:
   m_LocalScale: {x: 2.0214, y: 1, z: 2.0866}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: -11.443, z: 0}
 --- !u!1001 &1667891102
 PrefabInstance:
@@ -24052,7 +24052,7 @@ Transform:
   - {fileID: 555433106640427750}
   - {fileID: 4724383336990362976}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 164.215, z: 0}
 --- !u!137 &6424551934421929812
 SkinnedMeshRenderer:
