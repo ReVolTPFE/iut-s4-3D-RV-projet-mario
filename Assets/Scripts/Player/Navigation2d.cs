@@ -18,6 +18,15 @@ public class Navigation2d : MonoBehaviour
 
     private Vector3 coordY;
 
+    public GameObject g1;
+    public GameObject g2;
+    public GameObject g3;
+    public GameObject g4;
+    private bool touchedG1 = false;
+    private bool touchedG2 = false;
+    private bool touchedG3 = false;
+    private bool touchedG4 = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,9 +36,35 @@ public class Navigation2d : MonoBehaviour
         coordY = Player.transform.position;
     }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        acceleration = 0.01f;
+
+        if (collision.gameObject.layer == 8)
+        {
+            if (collision.gameObject == g1)
+            {
+                touchedG1 = true;
+            }
+            if (collision.gameObject == g2)
+            {
+                touchedG2 = true;
+            }
+            if (collision.gameObject == g3)
+            {
+                touchedG3 = true;
+            }
+            if (collision.gameObject == g4)
+            {
+                touchedG4 = true;
+            }
+
+            collision.gameObject.GetComponent<Animator>().Play("gombaDie");
+        }
+    }
     void OnCollisionStay(Collision collision)
     {
-        if (collision.gameObject.layer == 7)
+        if (collision.gameObject.layer == 7 || collision.gameObject.layer == 9)
         {
             isGrounded = true;
         } else
@@ -97,11 +132,11 @@ public class Navigation2d : MonoBehaviour
             }
 
             coordY = Player.transform.position;
-
         }
-    }
 
-    void OnCollisionEnter(Collision c) {
-        acceleration = 0.01f;
+        if (touchedG1 && touchedG2 &&  touchedG3 && touchedG4)
+        {
+            Debug.Log("Fin du lvl");
+        }
     }
 }
