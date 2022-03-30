@@ -19,6 +19,8 @@ public class Bowser : MonoBehaviour
 
     public GameObject gombas;
 
+    private bool changeStateOnce = true;
+
     void Start()
     {
         bowserCamera.gameObject.SetActive(false);
@@ -57,8 +59,13 @@ public class Bowser : MonoBehaviour
         }
         else
         {
+            if (changeStateOnce == true)
+            {
+                playerCamera.gameObject.SetActive(true);
+            }
+
+            changeStateOnce = false;
             bowserCamera.gameObject.SetActive(false);
-            playerCamera.gameObject.SetActive(true);
         }
         
         if (hasCollide == true && timestamp >= bowserTransition)

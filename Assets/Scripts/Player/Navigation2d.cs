@@ -27,6 +27,9 @@ public class Navigation2d : MonoBehaviour
     private bool touchedG3 = false;
     private bool touchedG4 = false;
 
+    public GameObject star;
+    private bool catchedStar = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +37,8 @@ public class Navigation2d : MonoBehaviour
         memoryAcceleration = acceleration;
         jump = new Vector3(0.0f, 2.0f, 0.0f);
         coordY = Player.transform.position;
+
+        star.gameObject.SetActive(false);
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -60,6 +65,12 @@ public class Navigation2d : MonoBehaviour
             }
 
             collision.gameObject.GetComponent<Animator>().Play("gombaDie");
+        }
+
+        if (touchedG1 && touchedG2 && touchedG3 && touchedG4 && catchedStar == false)
+        {
+            star.gameObject.SetActive(true);
+            catchedStar = true;
         }
     }
     void OnCollisionStay(Collision collision)
@@ -132,11 +143,6 @@ public class Navigation2d : MonoBehaviour
             }
 
             coordY = Player.transform.position;
-        }
-
-        if (touchedG1 && touchedG2 &&  touchedG3 && touchedG4)
-        {
-            Debug.Log("Fin du lvl");
         }
     }
 }

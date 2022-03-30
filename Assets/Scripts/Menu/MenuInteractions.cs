@@ -29,11 +29,11 @@ public class MenuInteractions : MonoBehaviour
                 }
                 if (hit.transform.name == "Lvl2")
                 {
-                    SceneManager.LoadScene("Undertale");
+                    SceneManager.LoadScene("neige");
                 }
                 if (hit.transform.name == "Lvl3")
                 {
-                    SceneManager.LoadScene("neige");
+                    SceneManager.LoadScene("Undertale");
                 }
             }
         }
