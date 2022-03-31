@@ -12,9 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/chateau.unity
     guid: 1f6ecf13e08a84d46ac527504e5749e3
   - enabled: 1
-    path: Assets/Scenes/Undertale.unity
-    guid: 6e012cf92f6355c49b64f194da0818bb
-  - enabled: 1
     path: Assets/Scenes/neige.unity
     guid: 50c1c6801b8aa694e8073a547c081876
+  - enabled: 1
+    path: Assets/Scenes/Undertale.unity
+    guid: 6e012cf92f6355c49b64f194da0818bb
   m_configObjects: {}

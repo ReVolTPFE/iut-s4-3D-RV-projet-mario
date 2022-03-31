@@ -41,6 +41,12 @@ public class StarCatchUndertale : MonoBehaviour
 
             hasCollide = true;
         }
+
+        if (other.gameObject.tag == "coin") // on a touché une piece
+        {
+            PlayerInfos.pi.GetCoin();
+            Destroy(other.gameObject);
+        }
     }
 
     void FixedUpdate()
